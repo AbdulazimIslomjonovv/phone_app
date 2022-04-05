@@ -2,7 +2,7 @@ import 'dart:io';
 
 import '../../data_base/data_base_contact.dart';
 
-List<String> listName = ['name'];
+List<String> listName = ['name','ism'];
 List<String> listPhoneNumber = ['phoneNumber', 'tel'];
 class Exception {
   static void exception({required List list}) {
