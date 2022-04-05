@@ -7,6 +7,5 @@ void main() {
     stdout.write('enter txt: ');
     txt = stdin.readLineSync()!;
     ReadTxt.read_txt(txt: txt);
-    print('geudie');
   }
 }
