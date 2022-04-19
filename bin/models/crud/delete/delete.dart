@@ -4,7 +4,6 @@ class Delete {
   static void delete_func({required String name}) {
     for (int i = 0; i < dataBaseOfContact.length; i++) {
       if (dataBaseOfContact[i].nname == name) {
-        print('kirdi $name');
         dataBaseOfContact.remove(dataBaseOfContact[i]);
         return ;
       }

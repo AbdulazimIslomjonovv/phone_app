@@ -1,3 +1,4 @@
+import '../../visual_phone/visual_phone.dart';
 import '../calling/dataBaseOfCalling.dart';
 
 class ToliqSuhbatlar {
@@ -14,14 +15,15 @@ class ToliqSuhbatlar {
       print('time: ${list[j].suhbatBoshlanganVaqt}');
       print('gaplashilganVaqt: ${list[j].gaplashilganVaqt}');
       print('suhbat: ');
-      for (int i = 0; i < list[j].suhbat.length; i++) {
-        if (i.isEven) {
-          print(list[j].suhbat[i]);
-        } else {
-          print('                  ' + list[j].suhbat[i]);
-        }
-      }
-      print('\n----------------------------\n');
+      Visual_phone.chatting_vs(list[j].suhbat);
+      // for (int i = 0; i < list[j].suhbat.length; i++) {
+      //   if (i.isEven) {
+      //     print(list[j].suhbat[i]);
+      //   } else {
+      //     print('                  ' + list[j].suhbat[i]);
+      //   }
+      // }
+      // print('\n----------------------------\n');
     }
   }
 }

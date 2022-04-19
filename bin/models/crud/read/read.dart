@@ -21,7 +21,9 @@ class Read {
     stdout.write('=> ');
     str = stdin.readLineSync()!;
     if (int.tryParse(str) is int) {
-      print(dataBaseOfContact[int.parse(str) - 1]);
+      Visual_phone.ichkari (
+          name: dataBaseOfContact[int.parse(str) - 1].nname,
+          tel: dataBaseOfContact[int.parse(str) - 1].pphoneNumber);
       stdout.write('=> ');
       str1 = stdin.readLineSync()!;
       if (str1.toLowerCase().replaceAll(' ', '') == 'history') {
