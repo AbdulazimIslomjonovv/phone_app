@@ -10,7 +10,7 @@ class RecentCalling {
     List<DataBaseOfCalling> data = List.from(dataBaseOfCalling.reversed);
     for (DataBaseOfCalling a in data) {
       t++;
-      print('------${t}-----');
+      print('------$t-----');
       print('name: ${a.name}');
       print('tel: ${a.phoneNumber}');
       print('time: ${a.suhbatBoshlanganVaqt}');

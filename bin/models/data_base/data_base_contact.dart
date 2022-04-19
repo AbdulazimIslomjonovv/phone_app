@@ -36,8 +36,11 @@ class DataBaseOfContact {
   }
 
   String toString() {
-    return '\nname: $nname\nphone number: $pphoneNumber';
+    return 'name: $nname\nphone number: $pphoneNumber';
   }
+
+  @override
+  int get hashCode => nname.hashCode;
 }
 
 bool isValidName({required String name}) {
@@ -57,3 +60,5 @@ bool isValidPhoneNumber({required String tel}) {
   }
   return true;
 }
+
+// bool

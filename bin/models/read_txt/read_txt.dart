@@ -4,7 +4,8 @@ import '../crud/create/create.dart';
 import '../crud/read/read.dart';
 import '../recent_calling/recent_calling.dart';
 
-List<String> add = ['add'];
+List<String> add = ['add', 'create'];
+List<String> addAll = ['addAll'];
 List<String> readCall = ['readCall'];
 List<String> read = ['read'];
 List<String> call = ['call'];

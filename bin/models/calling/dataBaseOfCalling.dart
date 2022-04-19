@@ -8,6 +8,7 @@ class DataBaseOfCalling {
   late DateTime suhbatBoshlanganVaqt;
   late List<String> suhbat;
 
+
   DataBaseOfCalling(
     this.name,
     this.phoneNumber,
@@ -17,6 +18,7 @@ class DataBaseOfCalling {
     this.suhbat,
   );
 
+  @override
   String toString() {
     return 'name: $name\nphone number: $phoneNumber\ngaplashilgan vaqti: '
         '$gaplashilganVaqt\nketkazilgan pul: $_ketkazilganPul\nsuhbat boshla'
